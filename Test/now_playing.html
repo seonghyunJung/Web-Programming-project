@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="realtime.css" media="screen" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>Now Playing</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
     </div>
     <div id="nav">
       <ul style="list-style-type: none; overflow: hidden">
-        <li class="active"><a href="#">HOME</a></li>
-        <li><a href="#">MOVIE</a></li>
-        <li><a href="#">게시판</a></li>
-        <li><a href="#">현재상영작</a></li>
+        <li class="deactive"><a href="realtime.html">HOME</a></li>
+        <li class="deactive"><a href="#">MOVIE</a></li>
+        <li class="deactive"><a href="#">게시판</a></li>
+        <li class="active"><a href="#">현재상영작</a></li>
       </ul>
     </div>
     <div id="content" class="dropdown">
@@ -72,5 +73,206 @@
       </ul>
     </div>
   </div>
+
+  <div class="row">
+    <div class="slider-btn-wrapper slider-btn-wrapper-left"> <!-- 왼쪽 화살표 -->
+      <button id="left-btn" class="slider-btn">&larr;</button>
+    </div>
+    <!-- Movie Card Start -->
+    <div class="card-view">
+      <div class="card-header avengerEndgame"></div>
+      <div class="card-movie-content">
+        <div class="card-movie-content-head">
+          <a href="#">
+            <h3 class="card-movie-title">Avengers: Endgame</h3>
+          </a>
+          <div class="ratings"><span>8.8</span>/10</div>
+        </div>
+        <div class="card-movie-info">
+          <div class="movie-running-time">
+            <label>Last update</label>
+            <span>Sun 8 Sept - 10:00PM</span>
+          </div>
+          <div class="movie-running-time">
+            <label>Running time</label>
+            <span>2hr 09min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card End -->
+
+    <!-- Movie Card Start -->
+    <div class="card-view">
+      <div class="card-header hobbsShaw"></div>
+      <div class="card-movie-content">
+        <div class="card-movie-content-head">
+          <a href="#">
+            <h3 class="card-movie-title">Hobbs & Shaw</h3>
+          </a>
+          <div class="ratings"><span>9.7</span>/10</div>
+        </div>
+        <div class="card-movie-info">
+          <div class="movie-running-time">
+            <label>Last update</label>
+            <span>Tue 4 July - 05:00PM</span>
+          </div>
+          <div class="movie-running-time">
+            <label>Running time</label>
+            <span>2hr 13min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card End -->
+
+    <!-- Movie Card Start -->
+    <div class="card-view">
+      <div class="card-header Johnwick"></div>
+      <div class="card-movie-content">
+        <div class="card-movie-content-head">
+          <a href="#">
+            <h3 class="card-movie-title">John Wick 3</h3>
+          </a>
+          <div class="ratings"><span>9.8</span>/10</div>
+        </div>
+        <div class="card-movie-info">
+          <div class="movie-running-time">
+            <label>Last update</label>
+            <span>Wed 16 Aug - 07:00PM</span>
+          </div>
+          <div class="movie-running-time">
+            <label>Running time</label>
+            <span>2hr 33min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card End -->
+
+    <!-- Movie Card Start -->
+    <div class="card-view">
+      <div class="card-header deadPool"></div>
+      <div class="card-movie-content">
+        <div class="card-movie-content-head">
+          <a href="#">
+            <h3 class="card-movie-title">Deadpool 2</h3>
+          </a>
+          <div class="ratings"><span>7.3</span>/10</div>
+        </div>
+        <div class="card-movie-info">
+          <div class="movie-running-time">
+            <label>Last update</label>
+            <span>Mon 16 Oct - 10:00PM</span>
+          </div>
+          <div class="movie-running-time">
+            <label>Running time</label>
+            <span>2hr 0min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card End -->
+
+    <!-- Movie Card Start -->
+    <div class="card-view">
+      <div class="card-header theLionking"></div>
+      <div class="card-movie-content">
+        <div class="card-movie-content-head">
+          <a href="#">
+            <h3 class="card-movie-title">The Lion King</h3>
+          </a>
+          <div class="ratings"><span>8.1</span>/10</div>
+        </div>
+        <div class="card-movie-info">
+          <div class="movie-running-time">
+            <label>Last update</label>
+            <span>Sun 8 Sept - 10:00PM</span>
+          </div>
+          <div class="movie-running-time">
+            <label>Running time</label>
+            <span>2hr 36min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card End -->
+
+    <!-- Movie Card Start -->
+    <div class="card-view">
+      <div class="card-header madMax"></div>
+      <div class="card-movie-content">
+        <div class="card-movie-content-head">
+          <a href="#">
+            <h3 class="card-movie-title">Mad Max: Fury Road</h3>
+          </a>
+          <div class="ratings"><span>7.4</span>/10</div>
+        </div>
+        <div class="card-movie-info">
+          <div class="movie-running-time">
+            <label>Last update</label>
+            <span>Tue 8 July - 05:00PM</span>
+          </div>
+          <div class="movie-running-time">
+            <label>Running time</label>
+            <span>2hr 19min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card End -->
+
+    <!-- Movie Card Start -->
+    <div class="card-view">
+      <div class="card-header aquaMan"></div>
+      <div class="card-movie-content">
+        <div class="card-movie-content-head">
+          <a href="#">
+            <h3 class="card-movie-title">Aquaman</h3>
+          </a>
+          <div class="ratings"><span>8.1</span>/10</div>
+        </div>
+        <div class="card-movie-info">
+          <div class="movie-running-time">
+            <label>Last update</label>
+            <span>Wed 16 Aug - 07:00PM</span>
+          </div>
+          <div class="movie-running-time">
+            <label>Running time</label>
+            <span>2hr 14min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Movie Card End -->
+
+    <!-- Movie Card Start -->
+    <div class="card-view">
+      <div class="card-header missionImpossible"></div>
+      <div class="card-movie-content">
+        <div class="card-movie-content-head">
+          <a href="#">
+            <h3 class="card-movie-title">Mission Impossible</h3>
+          </a>
+          <div class="ratings"><span>7.8</span>/10</div>
+        </div>
+        <div class="card-movie-info">
+          <div class="movie-running-time">
+            <label>Last update</label>
+            <span>Mon 16 Oct - 10:00PM</span>
+          </div>
+          <div class="movie-running-time">
+            <label>Running time</label>
+            <span>2hr 33min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-btn-wrapper slider-btn-wrapper-right"> <!-- 오른쪽 화살표 -->
+      <button id="right-btn" class="slider-btn">&rarr;</button>
+    </div>
+  </div>
+
+  <script src="realtime.js" type="text/javascript"></script>
 </body>
 </html>
