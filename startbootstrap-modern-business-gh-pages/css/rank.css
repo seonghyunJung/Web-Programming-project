@@ -1,0 +1,113 @@
+#content {
+    font-size:12px;
+    width:400px;
+   
+    padding: 0px;
+    background: #393;
+}
+
+
+#content dl{
+    margin:10px;
+}
+
+#content1 {
+    font-size:12px;
+    width:400px;
+    margin-left:-10px;
+   padding-left: 10px;
+   padding-right: 10px;
+    margin-top : 10px;
+    background: black;
+}
+
+#rank-list a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#rank-list a:hover {
+    text-decoration: underline;
+}
+
+#rank-list {
+    overflow: hidden;
+    width: 400px;
+    height: 20px;
+    margin: 0;
+}
+
+#rank-list1 a {
+    color: black;
+    text-decoration: none;
+  
+}
+
+#rank-list1 a:hover {
+   
+}
+
+#rank-list1 {
+    overflow: hidden;
+    width: 600px;
+    height: 220px;
+    margin: 0px;
+}
+
+#rank-list dt {
+    display: none;
+}
+
+#rank-list dd {
+    position: relative;
+    margin: 0;
+}
+
+#rank-list ol {
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#rank-list1 ol {
+    width:400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0px;
+    list-style-type: none;
+    background-color: rgb(245, 245, 245);
+    color:black;
+}
+#rank-list li {
+    height: 20px;
+    line-height: 20px;
+}
+
+#rank-list1 li {
+    height: 30px;
+    line-height: 20px;
+    padding-left:10px;
+    padding-top : 5px;
+    border:1px black solid;
+}
+#rank-list1 li:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.dropdown{
+    position:relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position:absolute;
+
+}
+.dropdown:hover .dropdown-content{display: block;}
+.dropdown-content:hover{display: talbe-cell;}
