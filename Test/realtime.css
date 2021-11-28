@@ -436,6 +436,7 @@ a:hover {
   background-color: blue;
 }
 
+/*
 .row {
   white-space: nowrap;
   position: relative;
@@ -443,6 +444,7 @@ a:hover {
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
+*/
 
 .card-view {
   background-color: #eee;
