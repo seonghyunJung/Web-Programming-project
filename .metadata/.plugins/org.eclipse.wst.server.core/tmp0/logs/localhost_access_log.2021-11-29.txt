@@ -177,3 +177,11 @@
 0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:16:06 +0900] "GET /Web_project/Test/img/lion_king.jpg HTTP/1.1" 404 853
 0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:16:06 +0900] "GET /Web_project/Test/img/aqua_man.jpg HTTP/1.1" 404 852
 0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:16:06 +0900] "GET /Web_project/Test/img/mission_Impossible.jpg HTTP/1.1" 404 862
+0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:17:15 +0900] "GET /Web_project/Test/movieInfo.jsp HTTP/1.1" 404 814
+127.0.0.1 - - [29/Nov/2021:01:23:29 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:23:33 +0900] "GET /Web_project/Test/main.jsp HTTP/1.1" 200 15250
+0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:23:33 +0900] "GET /Web_project/Test/css/styles.css HTTP/1.1" 200 218208
+0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:23:33 +0900] "GET /Web_project/Test/css/rank.css HTTP/1.1" 200 1732
+0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:23:33 +0900] "GET /Web_project/Test/css/realtime.css HTTP/1.1" 200 5380
+0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:23:33 +0900] "GET /Web_project/Test/js/scripts.js HTTP/1.1" 200 3017
+0:0:0:0:0:0:0:1 - - [29/Nov/2021:01:23:37 +0900] "GET /Web_project/Test/main.jsp HTTP/1.1" 200 15250
