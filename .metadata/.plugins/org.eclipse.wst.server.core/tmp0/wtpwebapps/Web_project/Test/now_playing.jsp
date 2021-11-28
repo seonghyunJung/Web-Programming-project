@@ -41,14 +41,14 @@ if(session.getAttribute( "userID") != null){
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="main.jsp">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="movieInfo.html">Movie</a></li>
-                            <li class="nav-item me-sm-3"><a class="nav-link" href="now_playing.html">Current Movies</a></li>
+                            <li class="nav-item"><a class="nav-link" href="movieInfo.jsp">Movie</a></li>
+                            <li class="nav-item me-sm-3"><a class="nav-link" href="now_playing.jsp">Current Movies</a></li>
                             <div id="content " class="nav-item dropdown ">
                                 <div class=""style=" color: white;padding-left:10px; ">
-                                    ì§ëì£¼ ë°ì¤ì¤í¼ì¤
+                                    지난주 박스오피스
                                 </div>
                                 <dl id="rank-list" style="">
-                                    <dt>ì¤ìê° ê¸ìì¹ ê²ìì´</dt>
+                                    <dt>실시간 급상승 검색어</dt>
                                     <dd>
                                         <ol id="rank" style="padding-left : 10px;">
                                             <li><a href="#">1. </a></li>
