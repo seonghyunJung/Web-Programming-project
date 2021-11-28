@@ -1,5 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ page import = "notice.Notice" %>
+<%@ page import = "notice.noticeDAO" %>
+<%@ page import = "java.util.ArrayList" %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +26,12 @@
   <title>Now Playing</title>
 </head>
 <body class="d-flex flex-column h-100">
+ <%
+	String userID = null;
+if(session.getAttribute( "userID") != null){
+	userID = (String) session.getAttribute("userID");
+}
+%>
   <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,10 +45,10 @@
                             <li class="nav-item me-sm-3"><a class="nav-link" href="now_playing.html">Current Movies</a></li>
                             <div id="content " class="nav-item dropdown ">
                                 <div class=""style=" color: white;padding-left:10px; ">
-                                    지난주 박스오피스
+                                    ì§ëì£¼ ë°ì¤ì¤í¼ì¤
                                 </div>
                                 <dl id="rank-list" style="">
-                                    <dt>실시간 급상승 검색어</dt>
+                                    <dt>ì¤ìê° ê¸ìì¹ ê²ìì´</dt>
                                     <dd>
                                         <ol id="rank" style="padding-left : 10px;">
                                             <li><a href="#">1. </a></li>
@@ -71,8 +82,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <li class="nav-item "><a class=" btn btn-outline-light me-sm-3" href="login.html">Login</a></li>
-                            <li class="nav-item"><a class=" btn btn-outline-light me-sm-3" href="signUp.html">Sign Up</a></li>
+                            <div id="login-form">
+         <ul>
+         <%
+if(userID == null){
+	%>
+         <li class="nav-item "><a class=" btn btn-outline-light me-sm-3" href="login.html">Login</a></li>
+         <li class="nav-item"><a class=" btn btn-outline-light me-sm-3" href="signUp.html">Sign Up</a></li>
+         <%}
+         else{
+         %>
+         Welcome <%=userID %>
+         <li class="nav-item"><a class=" btn btn-outline-light me-sm-3" href="logoutAction.jsp">Log Out</a></li>
+         <%}%>
+                    
+                    </ul>
+                </div> 
                         </ul>
                     </div>
                 </div>
@@ -288,11 +313,11 @@
           </div>
         </div>
       </div>
-        <!-- 네비게이션 -->
-        <div class="swiper-button-next"></div> <!-- 다음 버튼 (오른쪽에 있는 버튼)-->
-        <div class="swiper-button-prev"></div> <!-- 이전 버튼-->
+        <!-- ë¤ë¹ê²ì´ì -->
+        <div class="swiper-button-next"></div> <!-- ë¤ì ë²í¼ (ì¤ë¥¸ìª½ì ìë ë²í¼)-->
+        <div class="swiper-button-prev"></div> <!-- ì´ì  ë²í¼-->
 
-        <!-- 페이징 -->
+        <!-- íì´ì§ -->
         <div class="swiper-pagination"></div>
     </div>
   </div> 

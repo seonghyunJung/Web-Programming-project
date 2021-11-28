@@ -1,3 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ page import = "notice.Notice" %>
+<%@ page import = "notice.noticeDAO" %>
+<%@ page import = "java.util.ArrayList" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,6 +25,12 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600&display=swap" rel="stylesheet">
     </head>
     <body class="d-flex flex-column h-100">
+    <%
+	String userID = null;
+if(session.getAttribute( "userID") != null){
+	userID = (String) session.getAttribute("userID");
+}
+%>
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,8 +40,8 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="main.jsp">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="movieInfo.html">Movie</a></li>
-                            <li class="nav-item me-sm-3"><a class="nav-link" href="now_playing.html">Current Movies</a></li>
+                            <li class="nav-item"><a class="nav-link" href="movieInfo.jsp">Movie</a></li>
+                            <li class="nav-item me-sm-3"><a class="nav-link" href="now_playing.jsp">Current Movies</a></li>
                             <div id="content " class="nav-item dropdown ">
                                 <div class=""style=" color: white;padding-left:10px; ">
                                     지난주 박스오피스
@@ -70,8 +81,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <li class="nav-item "><a class=" btn btn-outline-light me-sm-3" href="login.html">Login</a></li>
-                            <li class="nav-item"><a class=" btn btn-outline-light me-sm-3" href="signUp.html">Sign Up</a></li>
+                            <div id="login-form">
+         <ul>
+         <%
+if(userID == null){
+	%>
+         <li class="nav-item "><a class=" btn btn-outline-light me-sm-3" href="login.html">Login</a></li>
+         <li class="nav-item"><a class=" btn btn-outline-light me-sm-3" href="signUp.html">Sign Up</a></li>
+         <%}
+         else{
+         %>
+         Welcome <%=userID %>
+         <li class="nav-item"><a class=" btn btn-outline-light me-sm-3" href="logoutAction.jsp">Log Out</a></li>
+         <%}%>
+                    
+                    </ul>
+                </div> 
                         </ul>
                     </div>
                 </div>
