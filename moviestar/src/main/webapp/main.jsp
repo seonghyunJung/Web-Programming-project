@@ -103,15 +103,17 @@ if(session.getAttribute( "userID") != null){
         <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
                 <div class="my-5 text-center text-xl-start">
-                    <h1 class="display-5 fw-bolder text-white mb-2">고독한 주인공의 이야기가 시작된다. 동영상 광고 제목</h1>
-                    <p class="lead fw-normal text-white-50 mb-4">여기는 동영상에 들어가 영화에 대한 간력한 설명을 입력하는 칸입니다.</p>
+                    <h1 class="display-5 fw-bolder text-white mb-2">올 겨울 12월 15일 스파이더맨이 다시 돌아온다!</h1>
+                    <p class="lead fw-normal text-white-50 mb-4">SPIDER-MAN: NO WAY HOME - Official Trailer</p>
                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">자세히 보기</a>
-                        <a class="btn btn-outline-light btn-lg px-4" href="#!"></a>
+                        <a class="btn btn-warning btn-lg px-4 me-sm-3" href="spidermanNowayhome.jsp">별점달러가기</a>
+                    
                     </div>
                 </div>
             </div>
-            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
+            <div style="max-width:545px;">
+            <!--  --><div  class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/LXZ3Z_QF8QI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
         </div>
     </div>
 </header>
@@ -124,29 +126,34 @@ if(session.getAttribute( "userID") != null){
                 <div class="row gx-5 row-cols-1 row-cols-md-2">
                     <div class="col mb-5 h-100">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                        <img class="mb-2"style="width:100%;"src="images/hawkeye.PNG">
+                        <h2 class="h5">마블의 미래가 여기에? 알고보면 좋은 '호크아이'에 대한 ...</h2>
+                        <p class="mb-0">호크아이의 솔로 이야기는 원래 영화로 나올 예정이었다. 호크아이를 연기한 제레미 레너 역시 애초 호크아이 영화에...</p>
                     </div>
                     <div class="col mb-5 h-100">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                        <img class="mb-2"style="width:100%;object-fit:cover;"src="images/encanto.PNG">
+                        <h2 class="h5">'엔칸토' 흥행마법은 계속! 극장가 전체는 한파 가득</h2>
+                        <p class="mb-0"><엔칸토 : 마법의 세계> 의 흥행마법이 이번 주말에도 계속됐다. 2주 연속 1위자리를 지키며 가족관객들을...</p>
                     </div>
                     <div class="col mb-5 mb-md-0 h-100">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                        <img class="mb-2"style="width:100%;"src="images/wandavision.PNG">
+                        <h2 class="h5">2021년을 뜨겁게 달군 화제의 해외 드라마 모음</h2>
+                        <p class="mb-0">다사다난했던 2021년도 마침표를 향해 가고 있다. 모두의 바람과 달리 올 한 해도 계속된 팬데믹으로 촬영이 중단되고,...</p>
                     </div>
                     <div class="col h-100">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                        <img class="mb-2"style="width:100%;"src="images/cho.PNG">
+                        <h2 class="h5">출연진만 봐도 황홀한 할리우드 초호화 캐스팅 영화</h2>
+                        <p class="mb-0">웨스 앤더슨 감독의 신착 <프렌치 디스패치> 는 자연스레 시상식을 떠올리게 만드는 황홀한 캐스팅으로 제작 단계에서부터...</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <!-- Testimonial section-->
 <div class="py-5 bg-light">
     <div class="container px-5 my-5">
@@ -163,39 +170,68 @@ if(session.getAttribute( "userID") != null){
                         </div>
                     </div>
                 </div>
-                <div class=" d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
+                <br>
+                <div class="ratio ratio-16x9" style="max-width:100%;"><iframe width="600" height="400" src="https://www.youtube.com/embed/-5Dc8EMVYBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 
             </div>
         </div>
     </div>
 </div>
+
 <!-- Blog preview section-->
+<
 <section class="py-5">
     <div class="container px-5 my-5">
         <div class="row gx-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6">
+            <div class="col-lg-8 ">
                 <div class="text-center">
-                    <h2 class="fw-bolder">최신작 트레일러</h2>
-                    <p class="lead fw-normal text-muted mb-5">트레일러 영상을 나열하는 공간입니다.</p>
+                    <h2 class="fw-bolder">최신작 <br>트레일러</h2>
+                    <p class="lead fw-normal text-muted mb-5">최신 영화를 맛보기로 즐기세요!</p>
                 </div>
             </div>
         </div>
         <div class="row gx-5">
             <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                <div class=" shadow border-0" style="background-color:white;">
+                   <div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/DJs_ihmMZfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="card-body p-4">
-                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                        <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Blog post title</h5></a>
-                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Trailer</div>
+                        <a class="text-decoration-none link-dark" ><h5 class="card-title mb-3">엔칸토 : 메인 예고편</h5></a>
+                        <p class="card-text mb-0" style="color:black;">[주토피아] 제작진과
+디즈니의 놀라운 상상력이 만났다
+
+올 겨울, 디즈니가 선사하는 뮤지컬 애니메이션✨
+[엔칸토: 마법의 세계] 메인 예고편 공개!</p>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                         <div class="d-flex align-items-end justify-content-between">
                             <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                
                                 <div class="small">
-                                    <div class="fw-bold">Kelly Rowan</div>
-                                    <div class="text-muted">March 12, 2021 &middot; 6 min read</div>
+                                    <div class="fw-bold">Disney</div>
+                                    <div class="text-muted">October 28, 2021 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-5">
+                <div class="shadow border-0" style="background-color:white;">
+                   <div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/dWEQjU3GCE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                        <a class="text-decoration-none link-dark" ><h5 class="card-title mb-3">연애 빠진 로맨스 : 메인 예고편</h5></a>
+                        <p class="card-text mb-0" style="color:black;">"발 빼려다? 푹 빠졌다!" #전종서X#손석구의 신개념 로맨스❤</p><br><br>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="d-flex align-items-center">
+                                
+                                <div class="small">
+                                    <div class="fw-bold">CJ ENM</div>
+                                    <div class="text-muted">November 29, 2021</div>
                                 </div>
                             </div>
                         </div>
@@ -203,48 +239,28 @@ if(session.getAttribute( "userID") != null){
                 </div>
             </div>
             <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                    <div class="card-body p-4">
-                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                        <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Another blog post title</h5></a>
-                        <p class="card-text mb-0">This text is a bit longer to illustrate the adaptive height of each card. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="shadow border-0" style="background-color:white;">
+                   <div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/2L0TW0l3q3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Trailer</div>
+                        <a class="text-decoration-none link-dark " ><h5 class="card-title mb-3">태일이 : 메인 예고편</h5></a>
+                        <p class=" mb-0" style="color:black;">청년 전태일, 애니메이션으로 다시 태어난다!
+가슴 벅차오르는 [태일이] 메인 예고편 공개!</p><br>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                         <div class="d-flex align-items-end justify-content-between">
                             <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                
                                 <div class="small">
-                                    <div class="fw-bold">Josiah Barclay</div>
-                                    <div class="text-muted">March 23, 2021 &middot; 4 min read</div>
+                                    <div class="fw-bold">명필름스</div>
+                                    <div class="text-muted">November 29, 2021 </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />
-                    <div class="card-body p-4">
-                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                        <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">The last blog post title is a little bit longer than the others</h5></a>
-                        <p class="card-text mb-0">Some more quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                        <div class="d-flex align-items-end justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                <div class="small">
-                                    <div class="fw-bold">Evelyn Martinez</div>
-                                    <div class="text-muted">April 2, 2021 &middot; 10 min read</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+         
         <!-- Call to action-->
             
         </div>

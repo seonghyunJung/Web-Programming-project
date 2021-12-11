@@ -1,16 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "user.User" %>
+<%@ page import = "user.UserDAO" %>
+<%@ page import = "java.io.PrintWriter" %>
+<% request.setCharacterEncoding("UTF-8"); %>
+
+<jsp:useBean id = "user" class="user.User" scope="page" />
+<jsp:setProperty name = "user" property = "userID" />
+<jsp:setProperty name = "user" property = "userPassword" />
+<jsp:setProperty name = "user" property = "userName" />
+<jsp:setProperty name = "user" property = "userEmail" />
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" >
-     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600&display=swap" rel="stylesheet">
+ <!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Bootstrap icons-->
+
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+ 
+
 </head>
   <style type="text/css">
- @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600&display=swap');
+ 
     .intro {
   height: 100%;
 }
@@ -24,11 +42,9 @@
 }
   </style>
   
-   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-
- <link href="css/styles.css" rel="stylesheet" >
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script> 
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600&display=swap" rel="stylesheet">
  </head>
  <body>
 
@@ -117,8 +133,14 @@
   </div>
 
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
    </body>
   </html>
   
