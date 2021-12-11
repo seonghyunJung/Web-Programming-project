@@ -25,12 +25,21 @@ request.setCharacterEncoding("UTF-8");
 		String userID = null;
 		float movieStar = -1.0f;
 		String movieTitle= null;
+		String noticeUserId= null;
+		int noticeId = 0;
 		if(session.getAttribute("userID") != null){
 			userID = (String) session.getAttribute("userID");
 			PrintWriter script = response.getWriter();
 			
-			movieStar = Float.parseFloat(request.getParameter("movieStar"));
+			//movieStar = Float.parseFloat(request.getParameter("movieStar"));
 			movieTitle = (String) session.getAttribute("movieTitle");
+			//noticeId = Integer.parseInt(request.getParameter("noticeId"));
+		}
+		if(request.getParameter("noticeId") != null){
+			noticeId = Integer.parseInt(request.getParameter("noticeId"));
+		}
+		if(request.getParameter("noticeUserId") != null){
+			noticeUserId = (String) request.getParameter("noticeUserId");
 		}
 		if(userID == null){
 			PrintWriter script = response.getWriter();
@@ -41,29 +50,31 @@ request.setCharacterEncoding("UTF-8");
 		}
 		
 		else{
-			if(notice.getNoticeContent() == null || movieStar == -1.0f){
+			
+			if(!userID.equals(noticeUserId)){
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
-				script.println("alert('입력이 안 된사항이 있습니다. ')");
+				script.println("alert('권한이 없습니다.');");
 				script.println("history.back()");
 				script.println("</script>");
 			}else{
 				noticeDAO noticeDAO = new noticeDAO();
-				int result = noticeDAO.write(movieTitle,movieStar, userID, notice.getNoticeContent());
+				int result = noticeDAO.deleteCmt(noticeId);
 				if (result == -1){
 					PrintWriter script = response.getWriter();
 					script.println("<script>");
-					script.println("alert('"+movieTitle+"')");
+					script.println("alert('"+movieTitle+"');");
 					script.println(movieStar);
 					script.println(userID);
 					script.println(notice.getNoticeContent());
-					script.println("alert('글쓰기에 실패했습니다. ')");
-					script.println("history.back()");
+					script.println("alert('글삭제 실패 ')");
+					script.println("history.back();");
 					script.println("</script>");
 				}
 				else{
 					PrintWriter script = response.getWriter();
 					script.println("<script>");
+					script.println("alert('글삭제 성공')");
 					script.println("location.href='"+movieTitle+".jsp'");
 					
 					script.println("</script>");

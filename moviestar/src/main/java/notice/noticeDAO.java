@@ -126,4 +126,17 @@ public class noticeDAO {
 		return -1.0f;
 		
 	}
+	public int deleteCmt(int noticeId) {
+		String SQL = "delete from notice where noticeId = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1,noticeId);
+			return pstmt.executeUpdate();
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return-1;//데이터 베이스 오류
+	}
 }
