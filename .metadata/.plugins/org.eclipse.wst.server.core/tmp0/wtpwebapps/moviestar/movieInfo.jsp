@@ -116,14 +116,15 @@ if(session.getAttribute( "userID") != null){
     
     
                         <!-- Movie Card Start -->
-                        <a href="avengersEndgame.jsp">
+                   		
                         <div class="card-view">
-                            <div class="card-header avengersEndgame" >
-                            	
+                            <div class="card-header avengersEndgame" OnClick="location.href ='avengersEndgame.jsp'" >
+                            	<div class="card-header-icon">
 
+                                </div>
                             </div>
                        
-    					</a>
+    					
                             <div class="card-movie-content">
                                 <div class="card-movie-content-head">
                                     <a href="avengersEndgame.jsp">
@@ -133,43 +134,78 @@ if(session.getAttribute( "userID") != null){
                                 </div>
                                 <div class="card-movie-info">
                                     <div class="movie-running-time">
-                                        <label>Last update</label>
-                                        <span>Sun 8 Sept - 10:00PM</span>
+                                        <label>Running time</label>
+                                        <span>3hr 1min</span>
                                     </div>
                                     <div class="movie-running-time">
-                                        <label>Running time</label>
-                                        <span>2hr 09min</span>
+                                        <label>Release date</label>
+                                        <span>2019.04.24</span>
                                     </div>
                                 </div>
                             </div>
                        
                			</div>
+               			
+                        <!-- Movie Card End -->
+    
+                        <!-- Movie Card Start -->
+                        
+                        <div class="card-view">
+                            <div class="card-header spiderman" OnClick="location.href ='spidermanNowayhome.jsp'">
+                                <div class="card-header-icon">
+                                    
+                                        
+                                    
+                                </div>
+                            </div>
+                           
+                            
+                            <div class="card-movie-content">
+                                <div class="card-movie-content-head">
+                                    <a href="spidermanNowayhome.jsp">
+                                        <h3 class="card-movie-title">Spiderman:<br> No way home</h3>
+                                    </a>
+                                    <div class="ratings"><span><%=movieDAO.callStar("spidermanNowayhome") %></span>/5</div>
+                                </div>
+                                <div class="card-movie-info">
+                                    <div class="movie-running-time">
+                                        <label>Running time</label>
+                                        <span>2hr 28min</span>
+                                    </div>
+                                    <div class="movie-running-time">
+                                        <label>Release date</label>
+                                        <span>2021.12.15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
                         <!-- Movie Card End -->
     
                         <!-- Movie Card Start -->
                         <div class="card-view">
-                            <div class="card-header hobbsShaw">
+                            <div class="card-header dune" OnClick="location.href ='dune.jsp'">
                                 <div class="card-header-icon">
-                                    <a href="#">
+                                    <a href="dune.jsp">
                                         
                                     </a>
                                 </div>
                             </div>
                             <div class="card-movie-content">
                                 <div class="card-movie-content-head">
-                                    <a href="#">
-                                        <h3 class="card-movie-title">Hobbs & Shaw</h3>
+                                    <a href="dune.jsp">
+                                        <h3 class="card-movie-title">Dune</h3>
                                     </a>
-                                    <div class="ratings"><span>9.7</span>/10</div>
+                                    <div class="ratings"><span><%=movieDAO.callStar("dune") %></span>/5</div>
                                 </div>
                                 <div class="card-movie-info">
                                     <div class="movie-running-time">
-                                        <label>Last update</label>
-                                        <span>Tue 4 July - 05:00PM</span>
+                                        <label>Running time</label>
+                                        <span>2hr 35min</span>
                                     </div>
                                     <div class="movie-running-time">
-                                        <label>Running time</label>
-                                        <span>2hr 13min</span>
+                                        <label>Release date</label>
+                                        <span>2021.10.20</span>
                                     </div>
                                 </div>
                             </div>
@@ -178,148 +214,28 @@ if(session.getAttribute( "userID") != null){
     
                         <!-- Movie Card Start -->
                         <div class="card-view">
-                            <div class="card-header Johnwick">
+                            <div class="card-header dontlookup" OnClick="location.href ='dontlookup.jsp'">
                                 <div class="card-header-icon">
-                                    <a href="#">
-                                        <i class="material-icons header-icon">play_arrow</i>
+                                    <a href="dontlookup.jsp">
+                                        
                                     </a>
                                 </div>
                             </div>
                             <div class="card-movie-content">
                                 <div class="card-movie-content-head">
-                                    <a href="#">
-                                        <h3 class="card-movie-title">John Wick 3</h3>
+                                    <a href="dontlookup.jsp">
+                                        <h3 class="card-movie-title">Don't look up</h3>
                                     </a>
-                                    <div class="ratings"><span>9.8</span>/10</div>
+                                    <div class="ratings"><span><%=movieDAO.callStar("dontlookup") %></span>/5</div>
                                 </div>
                                 <div class="card-movie-info">
-                                    <div class="movie-running-time">
-                                        <label>Last update</label>
-                                        <span>Wed 16 Aug - 07:00PM</span>
-                                    </div>
-                                    <div class="movie-running-time">
-                                        <label>Running time</label>
-                                        <span>2hr 33min</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Movie Card End -->
-    
-                        <!-- Movie Card Start -->
-                        <div class="card-view">
-                            <div class="card-header deadPool">
-                                <div class="card-header-icon">
-                                    <a href="#">
-                                        <i class="material-icons header-icon">play_arrow</i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-movie-content">
-                                <div class="card-movie-content-head">
-                                    <a href="#">
-                                        <h3 class="card-movie-title">Deadpool 2</h3>
-                                    </a>
-                                    <div class="ratings"><span>7.3</span>/10</div>
-                                </div>
-                                <div class="card-movie-info">
-                                    <div class="movie-running-time">
-                                        <label>Last update</label>
-                                        <span>Mon 16 Oct - 10:00PM</span>
-                                    </div>
-                                    <div class="movie-running-time">
-                                        <label>Running time</label>
-                                        <span>2hr 0min</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Movie Card End -->
-    
-                        <!-- Movie Card Start -->
-                        <div class="card-view">
-                            <div class="card-header theLionking">
-                                <div class="card-header-icon">
-                                    <a href="#">
-                                        <i class="material-icons header-icon">play_arrow</i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-movie-content">
-                                <div class="card-movie-content-head">
-                                    <a href="#">
-                                        <h3 class="card-movie-title">The Lion King</h3>
-                                    </a>
-                                    <div class="ratings"><span>8.1</span>/10</div>
-                                </div>
-                                <div class="card-movie-info">
-                                    <div class="movie-running-time">
-                                        <label>Last update</label>
-                                        <span>Sun 8 Sept - 10:00PM</span>
-                                    </div>
-                                    <div class="movie-running-time">
-                                        <label>Running time</label>
-                                        <span>2hr 36min</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Movie Card End -->
-    
-                        <!-- Movie Card Start -->
-                        <div class="card-view">
-                            <div class="card-header madMax">
-                                <div class="card-header-icon">
-                                    <a href="#">
-                                        <i class="material-icons header-icon">play_arrow</i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-movie-content">
-                                <div class="card-movie-content-head">
-                                    <a href="#">
-                                        <h3 class="card-movie-title">Mad Max: Fury Road</h3>
-                                    </a>
-                                    <div class="ratings"><span>7.4</span>/10</div>
-                                </div>
-                                <div class="card-movie-info">
-                                    <div class="movie-running-time">
-                                        <label>Last update</label>
-                                        <span>Tue 8 July - 05:00PM</span>
-                                    </div>
                                     <div class="movie-running-time">
                                         <label>Running time</label>
                                         <span>2hr 19min</span>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Movie Card End -->
-    
-                        <!-- Movie Card Start -->
-                        <div class="card-view">
-                            <div class="card-header aquaMan">
-                                <div class="card-header-icon">
-                                    <a href="#">
-                                        <i class="material-icons header-icon">play_arrow</i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-movie-content">
-                                <div class="card-movie-content-head">
-                                    <a href="#">
-                                        <h3 class="card-movie-title">Aquaman</h3>
-                                    </a>
-                                    <div class="ratings"><span>8.1</span>/10</div>
-                                </div>
-                                <div class="card-movie-info">
                                     <div class="movie-running-time">
-                                        <label>Last update</label>
-                                        <span>Wed 16 Aug - 07:00PM</span>
-                                    </div>
-                                    <div class="movie-running-time">
-                                        <label>Running time</label>
-                                        <span>2hr 14min</span>
+                                        <label>Release date</label>
+                                        <span>2021.12.08</span>
                                     </div>
                                 </div>
                             </div>
@@ -328,28 +244,147 @@ if(session.getAttribute( "userID") != null){
     
                         <!-- Movie Card Start -->
                         <div class="card-view">
-                            <div class="card-header missionImpossible">
+                            <div class="card-header encanto" OnClick="location.href ='encanto.jsp'">
                                 <div class="card-header-icon">
-                                    <a href="#">
-                                        <i class="material-icons header-icon">play_arrow</i>
+                                    <a href="encanto.jsp">
+                                        
                                     </a>
                                 </div>
                             </div>
                             <div class="card-movie-content">
                                 <div class="card-movie-content-head">
-                                    <a href="#">
-                                        <h3 class="card-movie-title">Mission Impossible</h3>
+                                    <a href="encanto.jsp">
+                                        <h3 class="card-movie-title">Encanto</h3>
                                     </a>
-                                    <div class="ratings"><span>7.8</span>/10</div>
+                                    <div class="ratings"><span><%=movieDAO.callStar("encanto") %></span>/5</div>
                                 </div>
                                 <div class="card-movie-info">
                                     <div class="movie-running-time">
-                                        <label>Last update</label>
-                                        <span>Mon 16 Oct - 10:00PM</span>
+                                        <label>Running time</label>
+                                        <span>1hr 49min</span>
                                     </div>
                                     <div class="movie-running-time">
+                                        <label>Release date</label>
+                                        <span>2021.11.24</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Movie Card End -->
+    
+                        <!-- Movie Card Start -->
+                        <div class="card-view">
+                            <div class="card-header kimetuno" OnClick="location.href ='kimetuno.jsp'">
+                                <div class="card-header-icon">
+                                    <a href="kimetuno.jsp">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-movie-content">
+                               <div class="card-movie-content-head" >
+                                    <a href="kimetuno.jsp">
+                                        <h3 class="card-movie-title">귀멸의 칼날 :<br> 주합회의</h3>
+                                    </a>
+                                    <div class="ratings"><span><%=movieDAO.callStar("kimetuno") %></span>/5</div>
+                                </div>
+                                <div class="card-movie-info">
+                                    <div class="movie-running-time">
                                         <label>Running time</label>
-                                        <span>2hr 33min</span>
+                                        <span>1hr 45min</span>
+                                    </div>
+                                    <div class="movie-running-time">
+                                        <label>Release date</label>
+                                        <span>2021.12.01</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Movie Card End -->
+    
+                        <!-- Movie Card Start -->
+                        <div class="card-view">
+                            <div class="card-header eternals" OnClick="location.href ='eternals.jsp'">
+                                <div class="card-header-icon">
+                                    <a href="eternals.jsp">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-movie-content">
+                                <div class="card-movie-content-head">
+                                    <a href="eternals.jsp">
+                                        <h3 class="card-movie-title">Eternals</h3>
+                                    </a>
+                                    <div class="ratings"><span><%=movieDAO.callStar("eternals") %></span>/5</div>
+                                </div>
+                                <div class="card-movie-info">
+                                    <div class="movie-running-time">
+                                        <label>Running time</label>
+                                        <span>2hr 35min</span>
+                                    </div>
+                                    <div class="movie-running-time">
+                                        <label>Release date</label>
+                                        <span>2021.11.03</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Movie Card End -->
+    
+                        <!-- Movie Card Start -->
+                        <div class="card-view">
+                            <div class="card-header nothingSerious" OnClick="location.href ='nothingSerious.jsp'">
+                                <div class="card-header-icon">
+                                    <a href="nothingSerious.jsp">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-movie-content">
+                                <div class="card-movie-content-head">
+                                    <a href="nothingSerious.jsp">
+                                        <h3 class="card-movie-title">연애 빠진 로맨스</h3>
+                                    </a>
+                                    <div class="ratings"><span><%=movieDAO.callStar("nothingSerious") %></span>/5</div>
+                                </div>
+                                <div class="card-movie-info">
+                                    <div class="movie-running-time">
+                                        <label>Running time</label>
+                                        <span>1hr 35min</span>
+                                    </div>
+                                    <div class="movie-running-time">
+                                        <label>Release date</label>
+                                        <span>2021.11.24</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Movie Card Start -->
+                        <div class="card-view">
+                            <div class="card-header spiritwalker" OnClick="location.href ='spiritwalker.jsp'">
+                                <div class="card-header-icon">
+                                    <a href="spiritwalker.jsp">
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-movie-content">
+                                <div class="card-movie-content-head">
+                                    <a href="spiritwalker.jsp">
+                                        <h3 class="card-movie-title">유체이탈자</h3>
+                                    </a>
+                                    <div class="ratings"><span><%=movieDAO.callStar("spiritwalker") %></span>/5</div>
+                                </div>
+                                <div class="card-movie-info">
+                                    <div class="movie-running-time">
+                                        <label>Running time</label>
+                                        <span>1hr 48min</span>
+                                    </div>
+                                    <div class="movie-running-time">
+                                        <label>Release date</label>
+                                        <span>2021.11.24</span>
                                     </div>
                                 </div>
                             </div>

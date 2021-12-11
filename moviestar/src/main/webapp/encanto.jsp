@@ -48,7 +48,7 @@
 </style>
 <body>
 <%
-String movieTitle = "avengersEndgame";
+String movieTitle = "encanto";
 session.setAttribute("movieTitle",movieTitle);
 String userID = null;
 if(session.getAttribute( "userID") != null){
@@ -137,14 +137,14 @@ movieDAO movieDAO = new movieDAO();
 <center>
 <div id="movieInfo" style="width:1050px; padding:10px; margin:10px; display: grid;">
 	<div id="movieThumb" style="float:left; ">
-		<img src="images/avengers.jpg" style="width:70%;border-radius:5px;"><br>
+		<img src="images/encanto.jpg" style="width:70%;border-radius:5px;"><br>
 		<% noticeDAO.calStar(movieTitle) ;%>
 	          	<%movieDAO.setMovie(movieTitle,noticeDAO.calStar(movieTitle));%>
 	</div>
 	<div id = "movieContent" style="text-align:left;">
 		<div id="movieTit">
-			<h2><b>어벤저스 : 엔드게임</b></h2>
-	        Avengers : Endgame
+			<h2><b>엔칸토</b></h2>
+	        Encanto
 		</div>
 		<hr>
 		<div id ="inner" style="display:flex;">
@@ -155,34 +155,42 @@ movieDAO movieDAO = new movieDAO();
 				</dl>
 				<dl class="indexTit" style="display:flex;">
 					<dt>장르</dt>
-					<dd>액션/SF</dd>
+					<dd>2019.04.24</dd>
 				</dl>
 				<dl class="indexTit" style="display:flex;">
 					<dt>국가</dt>
-					<dd>미국</dd>
+					<dd>2019.04.24</dd>
 				</dl>   
 				<dl class="indexTit" style="display:flex;">
 					<dt>등급</dt>
-					<dd>12세이상관람가</dd>
+					<dd>2019.04.24</dd>
 				</dl>   
 				<dl class="indexTit" style="display:flex;">
 					<dt>러닝타임</dt>
-					<dd>181분</dd>
+					<dd>2019.04.24</dd>
 				</dl>         
 	    	</div>
 	    	<div id="innerContent">
 	    	<dl class="indexTit"style="display:flex;">
-					<dt>평점</dt>
+					<dt>별점</dt>
 					<dd><i class="fas fa-star" style="color : #F05522"></i>&nbsp<%=movieDAO.callStar(movieTitle) %> / 5</dd>
 				</dl>
 				<dl class="indexTit" style="display:flex;">
-					<dt>누적관객</dt>
-					<dd>13,977,602명</dd>
+					<dt>장르</dt>
+					<dd>2019.04.24</dd>
 				</dl>
 				<dl class="indexTit" style="display:flex;">
-					<dt>수상내역</dt>
-					<dd>26회 미국배우조합상, 2020</dd>
+					<dt>국가</dt>
+					<dd>2019.04.24</dd>
 				</dl>   
+				<dl class="indexTit" style="display:flex;">
+					<dt>등급</dt>
+					<dd>2019.04.24</dd>
+				</dl>   
+				<dl class="indexTit" style="display:flex;">
+					<dt>러닝타임</dt>
+					<dd>2019.04.24</dd>
+				</dl> 
 	    	</div>
 		</div>
 	    

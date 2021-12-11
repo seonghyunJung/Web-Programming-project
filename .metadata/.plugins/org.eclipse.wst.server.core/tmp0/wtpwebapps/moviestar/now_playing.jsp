@@ -110,27 +110,29 @@ if(session.getAttribute( "userID") != null){
 </nav>
 <center>
   <div class="row">
+  	<div class="title-line">
+  	<h1 class="title">Coming Soon</h1>
+  	</div>
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <!-- Movie Card Start -->
           <div class="card-view">
-            <div class="card-header avengersEndgame" style="margin-left:12px;"></div>
+            <div class="card-header endless"></div>
             <div class="card-movie-content">
               <div class="card-movie-content-head">
                 <a href="#">
-                  <h3 class="card-movie-title">Avengers: Endgame</h3>
+                  <h3 class="card-movie-title">Endless</h3>
                 </a>
-                <div class="ratings"><span>8.8</span>/10</div>
               </div>
               <div class="card-movie-info">
                 <div class="movie-running-time">
-                  <label>Last update</label>
-                  <span>Sun 8 Sept - 10:00PM</span>
+                  <label>Running time</label>
+                  <span>1hr 34min</span>
                 </div>
                 <div class="movie-running-time">
-                  <label>Running time</label>
-                  <span>2hr 09min</span>
+                  <label>Release date</label>
+                  <span>2021.12.15</span>
                 </div>
               </div>
             </div>
@@ -141,22 +143,21 @@ if(session.getAttribute( "userID") != null){
         <div class="swiper-slide">
           <!-- Movie Card Start -->
           <div class="card-view">
-            <div class="card-header hobbsShaw"></div>
+            <div class="card-header lala"></div>
             <div class="card-movie-content">
               <div class="card-movie-content-head">
                 <a href="#">
-                  <h3 class="card-movie-title">Hobbs & Shaw</h3>
+                  <h3 class="card-movie-title">라라와 크리스마스 요정</h3>
                 </a>
-                <div class="ratings"><span>9.7</span>/10</div>
               </div>
               <div class="card-movie-info">
                 <div class="movie-running-time">
-                  <label>Last update</label>
-                  <span>Tue 4 July - 05:00PM</span>
+                  <label>Running time</label>
+                  <span>1hr 8min</span>
                 </div>
                 <div class="movie-running-time">
-                  <label>Running time</label>
-                  <span>2hr 13min</span>
+                  <label>Release date</label>
+                  <span>2021.12.15</span>
                 </div>
               </div>
             </div>
@@ -167,22 +168,21 @@ if(session.getAttribute( "userID") != null){
         <div class="swiper-slide">
           <!-- Movie Card Start -->
           <div class="card-view">
-            <div class="card-header Johnwick"></div>
+            <div class="card-header matrix"></div>
             <div class="card-movie-content">
               <div class="card-movie-content-head">
                 <a href="#">
-                  <h3 class="card-movie-title">John Wick 3</h3>
+                  <h3 class="card-movie-title">매트릭스: 리저렉션</h3>
                 </a>
-                <div class="ratings"><span>9.8</span>/10</div>
               </div>
               <div class="card-movie-info">
                 <div class="movie-running-time">
-                  <label>Last update</label>
-                  <span>Wed 16 Aug - 07:00PM</span>
+                  <label>Running time</label>
+                  <span>2hr 27min</span>
                 </div>
                 <div class="movie-running-time">
-                  <label>Running time</label>
-                  <span>2hr 33min</span>
+                  <label>Release date</label>
+                  <span>2021.12.22</span>
                 </div>
               </div>
             </div>
@@ -193,22 +193,21 @@ if(session.getAttribute( "userID") != null){
         <div class="swiper-slide">
           <!-- Movie Card Start -->
           <div class="card-view">
-            <div class="card-header deadPool"></div>
+            <div class="card-header cindellella"></div>
             <div class="card-movie-content">
               <div class="card-movie-content-head">
                 <a href="#">
-                  <h3 class="card-movie-title">Deadpool 2</h3>
+                  <h3 class="card-movie-title">신데렐라2: 마법에 걸린 왕자</h3>
                 </a>
-                <div class="ratings"><span>7.3</span>/10</div>
               </div>
               <div class="card-movie-info">
                 <div class="movie-running-time">
-                  <label>Last update</label>
-                  <span>Mon 16 Oct - 10:00PM</span>
+                  <label>Running time</label>
+                  <span>1hr 21min</span>
                 </div>
                 <div class="movie-running-time">
-                  <label>Running time</label>
-                  <span>2hr 0min</span>
+                  <label>Release date</label>
+                  <span>2021.12.22</span>
                 </div>
               </div>
             </div>
@@ -219,22 +218,21 @@ if(session.getAttribute( "userID") != null){
         <div class="swiper-slide">
           <!-- Movie Card Start -->
           <div class="card-view">
-            <div class="card-header theLionking"></div>
+            <div class="card-header kingsman"></div>
             <div class="card-movie-content">
               <div class="card-movie-content-head">
                 <a href="#">
-                  <h3 class="card-movie-title">The Lion King</h3>
+                  <h3 class="card-movie-title">킹스맨: 퍼스트 에이전트</h3>
                 </a>
-                <div class="ratings"><span>8.1</span>/10</div>
               </div>
               <div class="card-movie-info">
                 <div class="movie-running-time">
-                  <label>Last update</label>
-                  <span>Sun 8 Sept - 10:00PM</span>
+                  <label>Running time</label>
+                  <span>2hr 11min</span>
                 </div>
                 <div class="movie-running-time">
-                  <label>Running time</label>
-                  <span>2hr 36min</span>
+                  <label>Release date</label>
+                  <span>2021.12.22</span>
                 </div>
               </div>
             </div>
@@ -245,22 +243,21 @@ if(session.getAttribute( "userID") != null){
         <div class="swiper-slide">
           <!-- Movie Card Start -->
           <div class="card-view">
-            <div class="card-header madMax"></div>
+            <div class="card-header feedback"></div>
             <div class="card-movie-content">
               <div class="card-movie-content-head">
                 <a href="#">
-                  <h3 class="card-movie-title">Mad Max: Fury Road</h3>
+                  <h3 class="card-movie-title">피드백</h3>
                 </a>
-                <div class="ratings"><span>7.4</span>/10</div>
               </div>
               <div class="card-movie-info">
                 <div class="movie-running-time">
-                  <label>Last update</label>
-                  <span>Tue 8 July - 05:00PM</span>
+                  <label>Running time</label>
+                  <span>1hr 37min</span>
                 </div>
                 <div class="movie-running-time">
-                  <label>Running time</label>
-                  <span>2hr 19min</span>
+                  <label>Release date</label>
+                  <span>2021.12.22</span>
                 </div>
               </div>
             </div>
@@ -271,22 +268,21 @@ if(session.getAttribute( "userID") != null){
         <div class="swiper-slide">
           <!-- Movie Card Start -->
           <div class="card-view">
-            <div class="card-header aquaMan"></div>
+            <div class="card-header bigshark"></div>
             <div class="card-movie-content">
               <div class="card-movie-content-head">
                 <a href="#">
-                  <h3 class="card-movie-title">Aquaman</h3>
+                  <h3 class="card-movie-title">빅샤크4: 바다공룡 대모험</h3>
                 </a>
-                <div class="ratings"><span>8.1</span>/10</div>
               </div>
               <div class="card-movie-info">
                 <div class="movie-running-time">
-                  <label>Last update</label>
-                  <span>Wed 16 Aug - 07:00PM</span>
+                  <label>Running time</label>
+                  <span>1hr 25min</span>
                 </div>
                 <div class="movie-running-time">
-                  <label>Running time</label>
-                  <span>2hr 14min</span>
+                  <label>Release date</label>
+                  <span>2021.12.22</span>
                 </div>
               </div>
             </div>
@@ -297,22 +293,21 @@ if(session.getAttribute( "userID") != null){
         <div class="swiper-slide">
           <!-- Movie Card Start -->
           <div class="card-view">
-            <div class="card-header missionImpossible"></div>
+            <div class="card-header drivemycar"></div>
             <div class="card-movie-content">
               <div class="card-movie-content-head">
                 <a href="#">
-                  <h3 class="card-movie-title">Mission Impossible</h3>
+                  <h3 class="card-movie-title">드라이브 마이 카</h3>
                 </a>
-                <div class="ratings"><span>7.8</span>/10</div>
               </div>
               <div class="card-movie-info">
                 <div class="movie-running-time">
-                  <label>Last update</label>
-                  <span>Mon 16 Oct - 10:00PM</span>
+                  <label>Running time</label>
+                  <span>2hr 59min</span>
                 </div>
                 <div class="movie-running-time">
-                  <label>Running time</label>
-                  <span>2hr 33min</span>
+                  <label>Release date</label>
+                  <span>2021.12.23</span>
                 </div>
               </div>
             </div>
