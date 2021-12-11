@@ -182,50 +182,42 @@ a:hover {
    
 }
  
-.spiderman {
+.hobbsShaw {
     background-image: url("images/spiderman.jpg");
     background-size: cover;
 }
  
-.dune {
-    background-image: url("images/dune.jpg");
+.Johnwick {
+    background: url("img/john-wick-3.jpg");
     background-size: cover;
-    
+    background-position: 100% 100%;
 }
  
-.encanto {
-    background-image: url("images/encanto.jpg");
-    background-size: cover;
-}
- 
-.eternals{
-    background-image: url("images/eternals.jpg");
+.deadPool {
+    background: url("img/deadpool-2.jpg");
     background-size: cover;
 }
  
-.kimetuno{
-    background-image: url("images/kimetuno.jpg");
+.theLionking {
+    background: url("img/lion_king.jpg");
     background-size: cover;
 }
  
-.nothingSerious{
-    background-image: url("images/nothingSerious.jpg");
+.madMax {
+    background: url("img/mad_max.jpg");
     background-size: cover;
 }
  
-.spiritwalker{
-    background-image: url("images/spiritwalker.jpg");
+.aquaMan {
+    background: url("img/aqua_man.jpg");
     background-size: cover;
 }
-
-.taeil{
-    background-image: url("images/taeil.jpg");
-    background-size: cover;
-} 
-.dontlookup{
-    background-image: url("images/dontlookup.jpg");
+ 
+.missionImpossible {
+    background: url("img/mission_Impossible.jpg");
     background-size: cover;
 }
+ 
 .card-header-icon {
     position: relative;
 }
