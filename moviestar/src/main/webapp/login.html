@@ -1,6 +1,9 @@
 <html> 
 <head> 
 <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0"> 
+<link href="css/styles.css" rel="stylesheet" />
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600&display=swap" rel="stylesheet">
 <style>
                header{
                 display:flex;
@@ -68,7 +71,9 @@
 <body>
      <header> <h2>Login</h2> 
     </header> 
+    <center>
     <form action="loginAction.jsp" method="POST"> 
+    <div style="width:500px;">
         <div class="input-box"> 
             <input id="username" type="text" name="userID" placeholder="ID"> 
             <label for="username">ID</label>
@@ -80,7 +85,9 @@
             
             </div> 
                 <input type="submit" value="LOGIN">
-             </form> 
+                </div>
+             </form>
+            </center> 
         </body> 
 </html>
 
